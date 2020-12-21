@@ -1,27 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
-
   <body>
-    <!-- инпут для задачи b
-    <label>
-      Колличество
-      <input type="number" name="number" />
-    </label>
-    <button>Рассчитать</button> -->
+    <!-- task 1_7-->
+    <div>
+      <ul id="categories">
+        <li class="item">
+          <h2>Животные</h2>
 
-    <!-- инпут для задачи 
-    <label>
-      Введите страну доставки
-      <input type="text" name="country" />
-    </label>
-    <button>Рассчитать</button>
--->
+          <ul>
+            <li>Кот</li>
+            <li>Хомяк</li>
+            <li>Лошадь</li>
+            <li>Попугай</li>
+          </ul>
+        </li>
+        <li class="item">
+          <h2>Продукты</h2>
 
-    <script src="task-01_07.js" type="module"></script>
+          <ul>
+            <li>Хлеб</li>
+            <li>Петрушка</li>
+            <li>Творог</li>
+          </ul>
+        </li>
+        <li class="item">
+          <h2>Технологии</h2>
+
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- task 2_7-->
+    <ul id="ingredients"></ul>
+    <!-- task 3_7-->
+    <ul id="gallery"></ul>
+    <!-- task 4_7-->
+    <div id="counter">
+      <button type="button" data-action="decrement">-1</button>
+      <span id="value">0</span>
+      <button type="button" data-action="increment">+1</button>
+    </div>
+    <!-- task 5_7-->
+    <div>
+      <input type="text" placeholder="Ваше имя?" id="name-input" />
+      <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
+    </div>
+    <!-- task 6_7-->
+    <div>
+      <input
+        type="text"
+        id="validation-input"
+        data-length="6"
+        placeholder="Введи 6 символов"
+      />
+    </div>
+    <!-- task 7_7-->
+    <div>
+      <input id="font-size-control" type="range" />
+      <br />
+      <span id="text">Абракадабра!</span>
+    </div>
+    <!-- task 8_7-->
+    <div id="controls">
+      <input type="number" min="0" max="100" step="1" />
+      <button type="button" data-action="render">Создать</button>
+      <button type="button" data-action="destroy">Очистить</button>
+    </div>
+    <div id="boxes"></div>
+
+    <script src="task-1_7.js" type="module"></script>
+    <script src="task-2_7.js" type="module"></script>
+    <script src="task-3_7.js" type="module"></script>
+    <script src="task-4_7.js" type="module"></script>
+    <script src="task-5_7.js" type="module"></script>
+    <script src="task-6_7.js" type="module"></script>
+    <script src="task-7_7.js" type="module"></script>
+    <script src="task-8_7.js" type="module"></script>
   </body>
 </html>
