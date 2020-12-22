@@ -25,7 +25,6 @@ const createGallery = (array) => {
     `<li><img src='${url}' alt='${alt}' width='250'></li>`;
   const gallery = images.map(imagesTags).join(" ");
   listGallery.insertAdjacentHTML("afterbegin", gallery);
-  listGallery.setAttribute("display", "display: flex;");
 };
 
 createGallery(images);

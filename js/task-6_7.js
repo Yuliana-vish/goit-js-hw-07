@@ -22,8 +22,10 @@ input.addEventListener("blur", validation);
 function validation(text) {
   const value = text.currentTarget.value;
   if (value.length === 6) {
-    input.style.borderColor = "#4caf50";
+    input.classList.add("valid");
+    input.classList.remove("invalid");
   } else {
-    input.style.borderColor = "#f44336";
+    input.classList.add("invalid");
+    input.classList.remove("valid");
   }
 }
